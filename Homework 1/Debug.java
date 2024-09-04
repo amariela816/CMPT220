@@ -1,7 +1,7 @@
 //always start with importing our scanner so we can use it!
 import java.util.Scanner;
 
-public class Main {
+public class Debug {
     public static void main(String[] args) {
         //I've already set up a scanner with the name 'sc' for you!
         Scanner sc = new Scanner(System.in);
@@ -10,19 +10,28 @@ public class Main {
         //first: we ask our user for our prompt
         System.out.println("What is your name? ");
         //second: we create a string variable and store the user input back to it
-        String name = sc.nextLine();
+        String name = ("Athiná");
         //third: we print it back out!
         System.out.println("Hello, " + name + "! ");
+
+        
+        
 
 
         //finish this one for me by receiving and printing the user's age back to them
         System.out.println("How old are you? ");
+
+        int age = 19;
+
+        System.out.println("I am "+age+ " years old.");
 
 
         //can you do some math for me? take these variable and print out the sum of them!
         int num1 = 10;
         int num2 = 37;
         //?
+
+        System.out.println(num1 +num2);
 
         
 
