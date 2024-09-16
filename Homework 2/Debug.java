@@ -1,6 +1,8 @@
 
-public class Main {
+public class Debug {
     public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
 
         //for this section: are these all printing the best option? If they aren't, fix it!
         //(However you interpret 'fix' is fine i promise, any way you fix it shows you get the concept to me)
@@ -33,7 +35,9 @@ public class Main {
 
 
         //for this section: why are we not entering the if statement?
-        if ("Marist" == "marist"){
+        System.out.println("What is the name of your school?");
+        String school = sc.nextLine();
+        if (school.equals "marist"){
             System.out.println("Marist college!");
         } else{
             System.out.println("Not marist college :(!");
