@@ -7,7 +7,7 @@ public class loopspause {
         Scanner sc = new Scanner(System.in);
 
         String name = "Athiná";
-        for (int a = 0; a <20; a++){
+        for (int a = 0; a <=20; a++){
             System.out.println(name);
          }
          
@@ -17,10 +17,11 @@ public class loopspause {
             b++;
         }
 
-        Integer P = 0;
-        while (P < 4){
-            System.out.println("Athiná");
-            P++;
+        String P = "Athiná";
+        int z = 0;
+        while (z < 4){
+            System.out.println(P);
+            z++;
         }
 
         //infinite loop
@@ -34,7 +35,7 @@ public class loopspause {
         System.out.println("Enter a number");
         Integer num = sc.nextInt();
         int sum = 0;
-        int i = 1;
+        int i = 0;
         while (i <= num){
             sum = sum + i;
             i++;
