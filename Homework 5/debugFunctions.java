@@ -12,7 +12,9 @@ I give you two fully working method examples with and without parameters and cal
 */
 
 import java.util.Scanner;
-public class Main {
+public class debugFunctions {
+    
+
     public static void main(String[] args) {
     Scanner sc = new Scanner(System.in);
 
@@ -26,8 +28,23 @@ public class Main {
 
     System.out.println("im going to print out the word Dog now.");
     printDog();
-      
-    }
+
+    System.out.println("Enter a number and I will tell you the fatorial: ");
+    Integer x = sc.nextInt();
+    System.out.println(probTwo(x));
+    
+    System.out.println("Enter a number and I will tell you the sum of every other number: ");
+    Integer num = sc.nextInt();
+    System.out.println(probThree(num));
+
+    System.out.println("Enter a word and ill give you the reverse!");
+    sc.nextLine();
+    String input = sc.nextLine();
+    
+    probFive(input);
+
+
+}
 
   
     public static int add(int zyx, int tuv){
@@ -43,5 +60,33 @@ public class Main {
         System.out.println("Dog");
     }
 
-  
+    
+
+    public static int probTwo(Integer total) {
+        Integer num = total; 
+        for(int i =1; i< num ;i++){
+            total = total * i;
+
+        }
+        return(total);
+    }
+
+    public static int probThree(Integer x) {
+        Integer end = 0;
+        for(int sum = 1; sum<= x;sum+=2){
+            end = end + sum;
+        }
+        return(end);
+    }
+ 
+    
+    public static void probFive(String x) {
+        String reverse = "";
+        char ch;
+        for (int i=0; i< x.length();i++){
+            ch = x.charAt(i);
+            reverse = ch + reverse;
+        }
+        System.out.println(reverse);
+    }
 }
