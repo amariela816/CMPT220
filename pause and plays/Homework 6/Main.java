@@ -13,11 +13,13 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args){
-        //do you need something to start?
-        File inputfile = new File(/*what goes in here?*/);
+        List<String> list = new ArrayList<String>();
+        File inputfile = new File("hw6.txt");
         try {
             Scanner input = new Scanner(inputfile);
+            input.close();
             while(input.hasNext()){
+                list.add(input.nextLine());
                 //what do we do at every line of the file?
             }
         } catch (FileNotFoundException e) {
